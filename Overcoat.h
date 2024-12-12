@@ -19,11 +19,12 @@ public:
 	//Аксессоры
 	void set_NameBrand(const char* NameBrand_p);
 	void set_Type(const char* Type_p);
+	void print() { cout << NameBrand << "/" << Type << endl; }
 
 	//Перегрузки
-	bool operator==(Overcoat&& obj);
-	bool operator<(Overcoat&& obj);
-	bool operator>(Overcoat&& obj);
-	Overcoat operator=(Overcoat&& obj);
+	bool operator==(Overcoat& obj);
+	bool operator<(Overcoat& obj);
+	bool operator>(Overcoat& obj);
+	Overcoat operator=(Overcoat& obj);
 };
 

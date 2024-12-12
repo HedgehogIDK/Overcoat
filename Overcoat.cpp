@@ -13,28 +13,28 @@ void Overcoat::set_Type(const char* Type_p) {
 	Type = Type_p;
 }
 
-bool Overcoat::operator==(Overcoat&& obj) {
+bool Overcoat::operator==(Overcoat& obj) {
 	if (NameBrand == obj.NameBrand && Type == obj.Type)
 		return true;
 	else
 		return false;
 }
 
-bool Overcoat::operator<(Overcoat&& obj) {
+bool Overcoat::operator<(Overcoat& obj) {
 	if (NameBrand < obj.NameBrand && Type < obj.Type)
 		return true;
 	else
 		return false;
 }
 
-bool Overcoat::operator>(Overcoat&& obj) {
+bool Overcoat::operator>(Overcoat& obj) {
 	if (NameBrand > obj.NameBrand && Type > obj.Type)
 		return true;
 	else
 		return false;
 }
 
-Overcoat Overcoat::operator=(Overcoat&& obj) {
+Overcoat Overcoat::operator=(Overcoat& obj) {
 	if (!(this == &obj)) {
 		NameBrand = obj.NameBrand;
 		Type = obj.Type;
