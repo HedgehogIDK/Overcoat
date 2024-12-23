@@ -10,6 +10,7 @@ class Overcoat
 	int cost;
 
 public:
+	//Конструкторы
 	Overcoat():Overcoat(nullptr, nullptr,1){}
 	explicit Overcoat(string NameBrand_p):Overcoat(NameBrand_p, nullptr,1) {}
 	Overcoat(string NameBrand_p, string Type_p) :Overcoat(NameBrand_p, Type_p, 1) {}
