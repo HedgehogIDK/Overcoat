@@ -6,8 +6,8 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "RUS");
 
-	Overcoat obj_first{"ABIBA","Куртка"};
-	Overcoat obj_Second{"YWER", "Рубашка"};
+	Overcoat obj_first{"ABIBA","Куртка",100};
+	Overcoat obj_Second{"YWER", "Рубашка",200};
 
 	obj_first.print();
 	obj_Second.print();
